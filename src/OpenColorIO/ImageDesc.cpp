@@ -179,6 +179,13 @@ struct PackedImageDesc::Impl
             m_gData = (char*)m_aData + 2 * m_chanStrideBytes;
             m_rData = (char*)m_aData + 3 * m_chanStrideBytes;
         }
+        else if(m_chanOrder==CHANNEL_ORDERING_ARGB)
+        {
+            m_aData = m_data;
+            m_rData = (char*)m_aData + m_chanStrideBytes;
+            m_gData = (char*)m_aData + 2 * m_chanStrideBytes;
+            m_bData = (char*)m_aData + 3 * m_chanStrideBytes;
+        }
         else
         {
             throw Exception("PackedImageDesc Error: Unknown channel ordering.");
@@ -381,6 +388,7 @@ PackedImageDesc::PackedImageDesc(void * data,
 
     if(chanOrder==CHANNEL_ORDERING_RGBA 
         || chanOrder==CHANNEL_ORDERING_BGRA
+        || chanOrder==CHANNEL_ORDERING_ARGB
         || chanOrder==CHANNEL_ORDERING_ABGR)
     {
         getImpl()->m_numChannels = 4;
@@ -426,6 +434,7 @@ PackedImageDesc::PackedImageDesc(void * data,
     getImpl()->m_bitDepth  = bitDepth;
 
     if(chanOrder==CHANNEL_ORDERING_RGBA 
+        || chanOrder==CHANNEL_ORDERING_ARGB
         || chanOrder==CHANNEL_ORDERING_BGRA
         || chanOrder==CHANNEL_ORDERING_ABGR)
     {

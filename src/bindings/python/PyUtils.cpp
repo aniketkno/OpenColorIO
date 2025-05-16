@@ -117,6 +117,7 @@ long chanOrderToNumChannels(ChannelOrdering chanOrder)
         case CHANNEL_ORDERING_RGBA:
         case CHANNEL_ORDERING_BGRA:
         case CHANNEL_ORDERING_ABGR:
+        case CHANNEL_ORDERING_ARGB:
             return 4;
         case CHANNEL_ORDERING_RGB:
         case CHANNEL_ORDERING_BGR:

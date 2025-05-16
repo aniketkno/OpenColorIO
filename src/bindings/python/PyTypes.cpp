@@ -489,6 +489,8 @@ void bindPyTypes(py::module & m)
                DOC(PyOpenColorIO, ChannelOrdering, CHANNEL_ORDERING_BGRA))
         .value("CHANNEL_ORDERING_ABGR", CHANNEL_ORDERING_ABGR, 
                DOC(PyOpenColorIO, ChannelOrdering, CHANNEL_ORDERING_ABGR))
+        .value("CHANNEL_ORDERING_ARGB", CHANNEL_ORDERING_ARGB, 
+               DOC(PyOpenColorIO, ChannelOrdering, CHANNEL_ORDERING_ARGB))
         .value("CHANNEL_ORDERING_RGB", CHANNEL_ORDERING_RGB, 
                DOC(PyOpenColorIO, ChannelOrdering, CHANNEL_ORDERING_RGB))
         .value("CHANNEL_ORDERING_BGR", CHANNEL_ORDERING_BGR, 

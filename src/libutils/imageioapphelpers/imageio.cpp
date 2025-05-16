@@ -24,6 +24,7 @@ std::vector<std::string> GetChannelNames(const ChannelOrdering & chanOrder)
             return RgbChans;
         case CHANNEL_ORDERING_BGRA:
         case CHANNEL_ORDERING_ABGR:
+        case CHANNEL_ORDERING_ARGB:
         case CHANNEL_ORDERING_BGR:
         default:
         {
@@ -44,6 +45,7 @@ size_t GetNumChannels(const ChannelOrdering & chanOrder)
             return 3;
         case CHANNEL_ORDERING_BGRA:
         case CHANNEL_ORDERING_ABGR:
+        case CHANNEL_ORDERING_ARGB:
         case CHANNEL_ORDERING_BGR:
         default:
         {

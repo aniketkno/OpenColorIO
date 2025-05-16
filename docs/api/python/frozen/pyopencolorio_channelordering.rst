@@ -28,9 +28,14 @@
       :value: <ChannelOrdering.CHANNEL_ORDERING_ABGR: 2>
 
 
+   .. py:attribute:: ChannelOrdering.CHANNEL_ORDERING_ARGB
+      :module: PyOpenColorIO
+      :value: <ChannelOrdering.CHANNEL_ORDERING_ARGB: 3>
+
+
    .. py:attribute:: ChannelOrdering.CHANNEL_ORDERING_BGR
       :module: PyOpenColorIO
-      :value: <ChannelOrdering.CHANNEL_ORDERING_BGR: 4>
+      :value: <ChannelOrdering.CHANNEL_ORDERING_BGR: 5>
 
 
    .. py:attribute:: ChannelOrdering.CHANNEL_ORDERING_BGRA
@@ -40,7 +45,7 @@
 
    .. py:attribute:: ChannelOrdering.CHANNEL_ORDERING_RGB
       :module: PyOpenColorIO
-      :value: <ChannelOrdering.CHANNEL_ORDERING_RGB: 3>
+      :value: <ChannelOrdering.CHANNEL_ORDERING_RGB: 4>
 
 
    .. py:attribute:: ChannelOrdering.CHANNEL_ORDERING_RGBA
